@@ -3,193 +3,321 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ruang Hijau - Jasa pembuatan taman dan landscaping. Taman minimalis, landscaping rumah, perawatan taman, dan konsultasi.">
-  <title>Ruang Hijau | Jasa Pembuatan Taman & Landscaping</title>
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:Arial,Helvetica,sans-serif;color:#24352a;background:#f7faf7;line-height:1.6}
-    a{text-decoration:none;color:inherit}
-    .container{width:min(1100px,92%);margin:auto}
-    header{background:#fff;border-bottom:1px solid #e7eee8;position:sticky;top:0;z-index:10}
-    nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .logo{font-size:25px;font-weight:800;letter-spacing:.5px;color:#1f7a43}
-    .navlinks{display:flex;gap:25px;font-size:14px;font-weight:600}
-    .navlinks a:hover{color:#1f7a43}
-    .hero{padding:85px 0 75px;background:linear-gradient(135deg,#eef8f0,#fff)}
-    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
-    .badge{display:inline-block;background:#e0f1e4;color:#1f7a43;padding:7px 13px;border-radius:30px;font-size:13px;font-weight:700;margin-bottom:18px}
-    h1{font-size:clamp(38px,6vw,64px);line-height:1.05;margin-bottom:20px;color:#183524}
-    .hero p{font-size:18px;color:#617066;max-width:620px;margin-bottom:28px}
-    .buttons{display:flex;flex-wrap:wrap;gap:12px}
-    .btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:700}
-    .primary{background:#1f7a43;color:#fff}
-    .primary:hover{background:#176334}
-    .secondary{border:1px solid #cddbd0;background:#fff;color:#285637}
-    .hero-card{background:#fff;border:1px solid #e1eae3;border-radius:24px;padding:35px;box-shadow:0 15px 40px #173d2412}
-    .hero-card .leaf{font-size:72px;text-align:center;margin-bottom:15px}
-    .hero-card h3{text-align:center;font-size:23px;margin-bottom:8px}
-    .hero-card p{text-align:center;color:#68776d;font-size:14px}
-    section{padding:75px 0}
-    .section-title{text-align:center;margin-bottom:40px}
-    .section-title h2{font-size:34px;color:#193926;margin-bottom:8px}
-    .section-title p{color:#718076}
-    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .card{background:#fff;padding:26px 20px;border:1px solid #e3ebe5;border-radius:16px}
-    .icon{font-size:32px;margin-bottom:12px}
-    .card h3{font-size:18px;margin-bottom:7px}
-    .card p{font-size:14px;color:#6d796f}
-    .about{background:#edf6ef}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-    .about h2{font-size:34px;margin-bottom:15px}
-    .about p{color:#657269;margin-bottom:15px}
-    .checks{list-style:none;margin-top:18px}
-    .checks li{margin:10px 0;font-weight:600}
-    .contact-box{background:#1f7a43;color:#fff;border-radius:22px;padding:45px;text-align:center}
-    .contact-box h2{font-size:34px;margin-bottom:10px}
-    .contact-box p{opacity:.9;margin-bottom:25px}
-    .wa{background:#fff;color:#1f7a43}
-    footer{background:#173524;color:#dce8df;text-align:center;padding:28px 15px;font-size:13px}
-    @media(max-width:800px){
-      .navlinks{display:none}
-      .hero-grid,.about-grid{grid-template-columns:1fr}
-      .hero{padding:60px 0}
-      .cards{grid-template-columns:1fr 1fr}
-    }
-    @media(max-width:480px){
-      .cards{grid-template-columns:1fr}
-      .contact-box{padding:32px 20px}
-      section{padding:55px 0}
-    }
-  </style>
-</head>
-<body><!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ruang-Hijau | Jasa Pembuatan Taman & Landscaping</title>
+  <meta name="description" content="Ruang Hijau - Jasa pembuatan taman, landscaping, renovasi taman, dan perawatan taman. Wujudkan taman impian Anda.">
+
+  <title>Ruang Hijau | Jasa Pembuatan Taman & Landscaping</title>
 
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f8f3;
-      color: #26352a;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
+      color: #26352b;
+      background: #f7faf7;
     }
 
-    header {
-      background: #2f6b3f;
-      color: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
-
-    header h1 {
-      font-size: 42px;
-      margin: 0 0 10px;
-    }
-
-    header p {
-      font-size: 19px;
-      margin: 0;
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
     .container {
-      max-width: 900px;
+      width: min(1100px, 92%);
       margin: auto;
-      padding: 25px 18px;
     }
 
+    /* HEADER */
+    header {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 15px rgba(0,0,0,.08);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      color: #176b38;
+    }
+
+    .logo span {
+      color: #79a83b;
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 25px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .navlinks a:hover {
+      color: #176b38;
+    }
+
+    /* HERO */
     .hero {
-      background: white;
-      border-radius: 18px;
-      padding: 30px 20px;
-      margin-top: -25px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    }
-
-    .hero h2 {
-      color: #2f6b3f;
-      font-size: 28px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .service {
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-    }
-
-    .service h3 {
-      color: #2f6b3f;
-      margin-top: 0;
-    }
-
-    .price {
-      background: #e3f1df;
-      border-radius: 18px;
-      padding: 25px;
-      text-align: center;
-      margin-top: 25px;
-    }
-
-    .price h2 {
-      color: #2f6b3f;
-    }
-
-    .price strong {
-      font-size: 28px;
-    }
-
-    .contact {
-      background: #2f6b3f;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(15,55,30,.65), rgba(15,55,30,.65)),
+        url("https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
       color: white;
-      text-align: center;
-      border-radius: 18px;
-      padding: 30px 20px;
-      margin-top: 25px;
     }
 
-    .whatsapp {
+    .hero-content {
+      max-width: 700px;
+      padding: 80px 0;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #c8ed8a;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
       display: inline-block;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      padding: 14px 25px;
+      padding: 14px 24px;
       border-radius: 30px;
       font-weight: bold;
-      margin-top: 10px;
+      margin: 5px;
+      transition: .2s;
     }
 
-    footer {
+    .btn-primary {
+      background: #2f9e55;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #237b41;
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      background: white;
+      color: #176b38;
+    }
+
+    /* SECTION */
+    section {
+      padding: 75px 0;
+    }
+
+    .section-title {
       text-align: center;
-      padding: 25px;
-      color: #667066;
-      font-size: 14px;
+      margin-bottom: 45px;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 34px;
+    .section-title h2 {
+      font-size: 36px;
+      color: #176b38;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #66736a;
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 5px 25px rgba(0,0,0,.07);
+      transition: .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #176b38;
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #66736a;
+    }
+
+    /* ABOUT */
+    .about {
+      background: #edf6ed;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    }
+
+    .about h2 {
+      font-size: 38px;
+      color: #176b38;
+      margin-bottom: 20px;
+    }
+
+    .check {
+      margin: 15px 0;
+      font-weight: bold;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    /* CTA */
+    .cta {
+      background: #176b38;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 5px 25px rgba(0,0,0,.08);
+      text-align: center;
+    }
+
+    .contact-box h3 {
+      color: #176b38;
+      font-size: 27px;
+      margin-bottom: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #102b1a;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    footer p {
+      opacity: .85;
+    }
+
+    /* WHATSAPP */
+    .wa {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 29px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.25);
+      z-index: 999;
+    }
+
+    /* MOBILE */
+    @media (max-width: 750px) {
+      .navlinks {
+        display: none;
       }
 
-      .services {
+      .hero {
+        min-height: 570px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .services,
+      .about-grid,
+      .gallery {
         grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        height: 240px;
+      }
+
+      section {
+        padding: 55px 0;
       }
     }
   </style>
@@ -197,205 +325,239 @@
 
 <body>
 
+  <!-- HEADER -->
   <header>
-    <h1>🌿 Ruang-Hijau</h1>
-    <p>Jasa Pembuatan Taman & Landscaping</p>
+    <div class="container">
+      <nav>
+        <div class="logo">🌿 Ruang<span>Hijau</span></div>
+
+        <div class="navlinks">
+          <a href="#home">Beranda</a>
+          <a href="#jasa">Jasa</a>
+          <a href="#tentang">Tentang</a>
+          <a href="#galeri">Galeri</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Wujudkan <span>Taman Impian</span> Anda 🌿</h1>
 
-    <section class="hero">
-      <h2>Wujudkan Taman Impian Anda 🌱</h2>
+        <p>
+          Ruang Hijau melayani pembuatan taman dan landscaping
+          untuk rumah, kantor, tempat usaha, dan berbagai kebutuhan lainnya.
+        </p>
+
+        <a class="btn btn-primary"
+           href="https://wa.me/6281234567890?text=Halo%20Ruang%20Hijau,%20saya%20ingin%20konsultasi%20pembuatan%20taman.">
+          💬 Konsultasi Gratis
+        </a>
+
+        <a class="btn btn-light" href="#jasa">
+          Lihat Jasa
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JASA -->
+  <section id="jasa">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Jasa Kami</h2>
+        <p>Solusi taman dan landscaping sesuai kebutuhan Anda.</p>
+      </div>
+
+      <div class="services">
+
+        <div class="card">
+          <div class="icon">🏡</div>
+          <h3>Pembuatan Taman</h3>
+          <p>
+            Membuat taman baru yang indah, nyaman, dan sesuai
+            dengan konsep rumah Anda.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🌳</div>
+          <h3>Landscaping</h3>
+          <p>
+            Penataan area luar rumah, kantor, maupun tempat usaha
+            agar terlihat lebih hijau dan menarik.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🔨</div>
+          <h3>Renovasi Taman</h3>
+          <p>
+            Mengubah taman lama menjadi taman yang lebih rapi,
+            modern, dan nyaman.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🌱</div>
+          <h3>Taman Minimalis</h3>
+          <p>
+            Konsep taman minimalis untuk rumah dengan lahan
+            kecil maupun terbatas.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏢</div>
+          <h3>Taman Kantor</h3>
+          <p>
+            Menciptakan area hijau yang membuat lingkungan kerja
+            lebih nyaman dan menyenangkan.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">✂️</div>
+          <h3>Perawatan Taman</h3>
+          <p>
+            Perawatan dan pemeliharaan taman agar tetap bersih,
+            rapi, dan sehat.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="about" id="tentang">
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div>
+          <img
+            class="about-img"
+            src="https://images.unsplash.com/photo-1558521958-0a228e77e984?auto=format&fit=crop&w=1000&q=85"
+            alt="Taman indah"
+          >
+        </div>
+
+        <div>
+          <h2>Mengapa Memilih Ruang Hijau?</h2>
+
+          <p>
+            Kami membantu mewujudkan area hijau yang indah,
+            nyaman, dan sesuai dengan karakter rumah atau tempat usaha Anda.
+          </p>
+
+          <p class="check">✅ Desain sesuai kebutuhan</p>
+          <p class="check">✅ Pengerjaan rapi</p>
+          <p class="check">✅ Konsultasi sebelum pengerjaan</p>
+          <p class="check">✅ Bisa menyesuaikan budget</p>
+          <p class="check">✅ Melayani rumah, kantor & tempat usaha</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section id="galeri">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Inspirasi Taman</h2>
+        <p>Contoh konsep taman yang bisa kami bantu wujudkan.</p>
+      </div>
+
+      <div class="gallery">
+
+        <img
+          src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=900&q=85"
+          alt="Taman rumah">
+
+        <img
+          src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=900&q=85"
+          alt="Landscaping taman">
+
+        <img
+          src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=900&q=85"
+          alt="Taman hijau">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+
+      <h2>Punya Lahan yang Ingin Dibuat Taman?</h2>
 
       <p>
-        Kami membantu membuat taman yang indah, asri,
-        nyaman, dan sesuai dengan kebutuhan rumah maupun tempat usaha.
+        Ceritakan kebutuhan Anda. Kami siap membantu memberikan
+        ide dan solusi untuk taman Anda.
       </p>
 
-      <p>
-        <strong>Konsultasi taman bersama kami.</strong>
-      </p>
-    </section>
-
-    <h2>🌱 Layanan Kami</h2>
-
-    <section class="services">
-
-      <div class="service">
-        <h3>🏡 Taman Rumah</h3>
-        <p>
-          Pembuatan taman untuk halaman depan,
-          samping maupun belakang rumah.
-        </p>
-      </div>
-
-      <div class="service">
-        <h3>🌿 Taman Minimalis</h3>
-        <p>
-          Desain taman sederhana, rapi,
-          dan cocok untuk rumah modern.
-        </p>
-      </div>
-
-      <div class="service">
-        <h3>🌳 Landscaping</h3>
-        <p>
-          Penataan tanaman dan area hijau
-          agar lingkungan terlihat lebih menarik.
-        </p>
-      </div>
-
-      <div class="service">
-        <h3>✂️ Perawatan Taman</h3>
-        <p>
-          Pemangkasan, pembersihan,
-          dan perawatan tanaman secara berkala.
-        </p>
-      </div>
-
-      <div class="service">
-        <h3>🪴 Tanaman Hias</h3>
-        <p>
-          Menyediakan berbagai tanaman hias
-          untuk mempercantik rumah dan taman.
-        </p>
-      </div>
-
-      <div class="service">
-        <h3>🌱 Konsultasi Taman</h3>
-        <p>
-          Konsultasikan kebutuhan taman Anda
-          sebelum menentukan desain dan tanaman.
-        </p>
-      </div>
-
-    </section>
-
-    <section class="price">
-      <h2>💰 Harga</h2>
-
-      <p>Pembuatan taman</p>
-
-      <strong>Mulai Rp50.000/m²</strong>
-
-      <p>
-        Harga dapat menyesuaikan desain,
-        jenis tanaman, material dan kondisi lokasi.
-      </p>
-    </section>
-
-    <section class="contact">
-
-      <h2>📱 Hubungi Ruang-Hijau</h2>
-
-      <p>
-        Ingin membuat taman di rumah atau tempat usaha?
-      </p>
-
-      <p>
-        Konsultasikan kebutuhan Anda dengan kami.
-      </p>
-
-      <!-- GANTI NOMOR DI BAWAH -->
-      <a
-        class="whatsapp"
-        href="https://wa.me/628XXXXXXXXXX?text=Halo%20Ruang-Hijau,%20saya%20ingin%20konsultasi%20pembuatan%20taman."
-        target="_blank">
-        💬 Chat WhatsApp
+      <a class="btn btn-light"
+         href="https://wa.me/6281234567890?text=Halo%20Ruang%20Hijau,%20saya%20ingin%20konsultasi%20tentang%20taman.">
+        💬 Hubungi Ruang Hijau
       </a>
 
-    </section>
-
-  </div>
-
-  <footer>
-    © 2026 Ruang-Hijau — Jasa Pembuatan Taman & Landscaping
-  </footer>
-
-</body>
-</html>
-<header>
-  <div class="container">
-    <nav>
-      <a class="logo" href="#">Ruang Hijau</a>
-      <div class="navlinks">
-        <a href="#layanan">Layanan</a>
-        <a href="#tentang">Tentang</a>
-        <a href="#kontak">Kontak</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="badge">JASA TAMAN & LANDSCAPING</span>
-        <h1>Taman indah,<br>rumah lebih nyaman.</h1>
-        <p>Kami membantu mewujudkan taman yang rapi, asri, dan sesuai karakter rumah Anda.</p>
-        <div class="buttons">
-          <!-- GANTI NOMOR DI BAWAH dengan nomor WhatsApp Anda -->
-          <a class="btn primary" href="https://wa.me/6281234567890" target="_blank">Konsultasi WhatsApp</a>
-          <a class="btn secondary" href="#layanan">Lihat Layanan</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="leaf">🌿</div>
-        <h3>Ruang Hijau</h3>
-        <p>Solusi taman dan landscaping untuk rumah, kantor, dan area komersial.</p>
-      </div>
     </div>
   </section>
 
-  <section id="layanan">
-    <div class="container">
-      <div class="section-title">
-        <h2>Layanan Kami</h2>
-        <p>Dari konsep hingga taman siap dinikmati.</p>
-      </div>
-      <div class="cards">
-        <div class="card"><div class="icon">🌱</div><h3>Pembuatan Taman</h3><p>Pembuatan taman sesuai ukuran dan kebutuhan area.</p></div>
-        <div class="card"><div class="icon">🏡</div><h3>Landscaping</h3><p>Penataan area luar rumah agar lebih indah dan nyaman.</p></div>
-        <div class="card"><div class="icon">🌳</div><h3>Tanaman & Pohon</h3><p>Pilihan tanaman untuk mempercantik dan menghijaukan area.</p></div>
-        <div class="card"><div class="icon">✂️</div><h3>Perawatan Taman</h3><p>Pemangkasan, pembersihan, dan perawatan taman berkala.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="tentang" class="about">
-    <div class="container about-grid">
-      <div>
-        <h2>Menghadirkan suasana hijau di setiap ruang.</h2>
-        <p>Ruang Hijau hadir untuk membantu Anda memiliki area hijau yang indah, rapi, dan mudah dirawat.</p>
-        <ul class="checks">
-          <li>✓ Konsep sederhana dan elegan</li>
-          <li>✓ Menyesuaikan kondisi lokasi</li>
-          <li>✓ Cocok untuk rumah & usaha</li>
-        </ul>
-      </div>
-      <div class="hero-card">
-        <div class="leaf">🏡🌿</div>
-        <h3>Siap mulai?</h3>
-        <p>Kirim foto lokasi dan ceritakan taman yang Anda inginkan. Kami bantu dari awal.</p>
-      </div>
-    </div>
-  </section>
-
+  <!-- KONTAK -->
   <section id="kontak">
     <div class="container">
-      <div class="contact-box">
-        <h2>Wujudkan taman impian Anda</h2>
-        <p>Konsultasikan kebutuhan taman Anda dengan Ruang Hijau.</p>
-        <!-- GANTI NOMOR DI BAWAH dengan nomor WhatsApp Anda -->
-        <a class="btn wa" href="https://wa.me/6281234567890" target="_blank">Chat WhatsApp</a>
+
+      <div class="section-title">
+        <h2>Hubungi Kami</h2>
+        <p>Konsultasikan kebutuhan taman Anda.</p>
       </div>
+
+      <div class="contact-box">
+
+        <h3>🌿 Ruang Hijau</h3>
+
+        <p>
+          Jasa Pembuatan Taman & Landscaping
+        </p>
+
+        <p style="margin:20px 0;">
+          📱 WhatsApp: 0812-3456-7890
+        </p>
+
+        <a class="btn btn-primary"
+           href="https://wa.me/6281234567890?text=Halo%20Ruang%20Hijau,%20saya%20ingin%20konsultasi%20pembuatan%20taman.">
+          Chat WhatsApp
+        </a>
+
+      </div>
+
     </div>
   </section>
-</main>
 
-<footer>
-  © 2026 Ruang Hijau · Jasa Pembuatan Taman & Landscaping
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Ruang Hijau. Jasa Pembuatan Taman & Landscaping.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a
+    class="wa"
+    href="https://wa.me/6281234567890?text=Halo%20Ruang%20Hijau,%20saya%20ingin%20konsultasi%20taman."
+    aria-label="WhatsApp">
+    💬
+  </a>
+
 </body>
 </html>
